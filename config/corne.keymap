@@ -10,7 +10,7 @@
 
 #define MEH LS(LC(LALT))
 
-#include "keys_si.h"
+// #include "keys_si.h"
 #include "behaviors.dtsi"
 #include "macros.dtsi"
 #include "combos.dtsi"

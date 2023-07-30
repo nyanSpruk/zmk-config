@@ -67,6 +67,21 @@
       #binding-cells = <0>;
     };
 
+    /*
+     - tap: &kp <PARAM_2>
+     - hold: &none
+
+     Example: &nh 0 K_CANCEL
+     */
+    /omit-if-no-ref/ nh: no_hold {
+      label = "NO_HOLD";
+      compatible = "zmk,behavior-hold-tap";
+      flavor = "balanced";
+      tapping-term-ms = <TAPPING_TERM_MS>;
+      bindings = <&none>, <&kp>;
+      #binding-cells = <2>;
+    };
+
      /*
      - tap: backspace
      - hold: repeat backspace

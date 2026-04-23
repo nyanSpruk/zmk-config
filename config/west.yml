@@ -2,10 +2,10 @@ manifest:
     remotes:
         - name: urob
           url-base: https://github.com/urob
-  projects:
-    - name: zmk
-      remote: zmkfirmware
-      revision: 0331b7d16e80954b807917f9323e59ffc1e3b626 # main (4/19/2026)
-      import: app/west.yml
+    projects:
+        - name: zmk
+          remote: urob
+          revision: v0.2.1
+          import: app/west.yml
     self:
         path: config
